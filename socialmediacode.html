@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='styletesting2.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styletesting3.css'> <!-- Link to the new CSS file -->
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-1g navbar-dark bg-transparent">
+        <a class="navbar-brand fs-4" href="#">Welcome To Miss A Beauty</a>
+        <a href="#" onclick="toggleSocialMediaIcons()">Social Media</a>
+    </nav>
+
+    <ul class="wrapper" id="socialMediaIcons">
+        <li class="icon facebook" onclick="redirectTo('https://www.facebook.com/')">
+            <span class="tooltip">Facebook</span>
+            <i class="fab fa-facebook-f"></i>
+        </li>
+
+        <li class="icon instagram" onclick="redirectTo('https://www.instagram.com/missabeautyhair?igsh=MTMyeDdwNnlmbnkyeg==')">
+            <span class="tooltip">Instagram</span>
+            <i class="fab fa-instagram"></i>
+        </li>
+
+        <li class="icon tiktok" onclick="redirectTo('https://www.tiktok.com/@miss.a.beauty.hai?_t=8kCatB4cAA1&_r=1')">
+            <span class="tooltip">TikTok</span>
+            <i class="fab fa-tiktok"></i>
+        </li>
+    </ul>
+
+    <a href="#" class="back-to-home" onclick="redirectTo('missatesting.html')">Back to Home</a>
+
+    <script>
+        function toggleSocialMediaIcons() {
+            var socialMediaIcons = document.getElementById("socialMediaIcons");
+            socialMediaIcons.style.display = (socialMediaIcons.style.display === 'none' || socialMediaIcons.style.display === '') ? 'flex' : 'none';
+        }
+
+        function redirectTo(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>

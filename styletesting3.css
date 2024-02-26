@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+}
+
+.navbar {
+    background-color: #6c5b7b; 
+    padding: 10px;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.wrapper {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.icon {
+    margin: 0 15px;
+    font-size: 2em;
+    color: #3b5998; /* Facebook color */
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon.instagram {
+    color: #c13584;
+}
+
+.icon.tiktok {
+    color: #000;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.icon:hover .tooltip {
+    display: block;
+}
+
+.icon span {
+    margin-left: 5px;
+}
+
+.back-to-home {
+    background-color: #6c5b7b; 
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.back-to-home:hover {
+    background-color: #56456d;
+}
+
+@media(max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+}
